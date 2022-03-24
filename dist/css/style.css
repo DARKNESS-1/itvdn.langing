@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "fontawesome";
+  font-display: swap;
+  src: url("../fonts/fontawesome-regular.woff2") format("woff2"), url("../fonts/fontawesome-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "georgia-bold";
+  font-display: swap;
+  src: url("../fonts/georgia-bold.woff2") format("woff2"), url("../fonts/georgia-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "helvetica-bold";
+  font-display: swap;
+  src: url("../fonts/helvetica-neue-bold.woff2") format("woff2"), url("../fonts/helvetica-neue-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "helvetica-neue-regular";
+  font-display: swap;
+  src: url("../fonts/helvetica-neue-regular.woff2") format("woff2"), url("../fonts/helvetica-neue-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "helvetica-neue-light";
+  font-display: swap;
+  src: url("../fonts/helvetica-neue-light.woff2") format("woff2"), url("../fonts/helvetica-neue-light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "helvetica-neue-regular";
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 22px 7px;
+}
+.button-red {
+  background: #de2b24;
+  transition: 0.3s;
+}
+.button-red:hover {
+  background: #e34943;
+}
+.button-yellow {
+  background: #f8cd53;
+}
+.button-yellow:hover {
+  background: #f9d775;
+}
+.button-text-uppercase {
+  text-transform: uppercase;
+}
+
+.header_top {
+  background: #f0f2f4;
+}
+
+.contacts {
+  text-align: right;
+}
+
+.contact {
+  display: inline-block;
+  padding: 10px 10px 8px;
+  color: #424242;
+  transition: 0.3s;
+}
+.contact:hover {
+  color: #757575;
+}
+.contact .fa-solid,
+.contact .fa-brands {
+  color: #424242;
+  margin-right: 5px;
+}

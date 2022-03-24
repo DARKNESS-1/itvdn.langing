@@ -1,0 +1,23 @@
+header.header   
+    .header_top 
+        .container 
+            .contacts   
+                a.contact(href='tel:+380508642732')
+                    i.fa-solid.fa-mobile-screen-button(aria-hidden='true')
+                    span.contact_text 050-864-27-32
+                a.contact(href='mailto:pavel.rogovoj@gmail.com')
+                    i.fa-solid.fa-envelope(aria-hidden='true')
+                    span.contact_text info.business@com
+                a.facebook-icon(href='facebook.com')
+                    i.fa-brands.fa-facebook-square(aria-hidden='true')
+    .container
+        .header_bottom
+            .logo: img.logo_pictures(src='@img/logo.png' alt='logo')
+        nav.nav 
+        - var items = ['Home', 'About us', 'Our Approach', 'Our Work']
+            each item in items 
+                if item === 'Home'
+                    a.nav_link.nav_link-active(href='#')= item
+                else    
+                    a.nav_link(href='#')= item 
+        a.button.header_button.button-red(href='#') Free Consultation
