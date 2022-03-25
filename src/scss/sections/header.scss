@@ -1,10 +1,20 @@
 .header {
     &_top {
         background: #f0f2f4;
+        border-bottom: 1px solid #e2e2e2;
+        vertical-align: top;
+    }
+    &_bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 41px 0 32px;
     }
 }
 
 .contacts {
+    font-weight: 600;
     text-align: right;
 }
 
@@ -13,13 +23,31 @@
     padding: 10px 10px 8px;
     color: #424242;
     transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
 
     &:hover {
         color: lighten($color: #424242, $amount: 20);
     }
-    .fa-solid,
-    .fa-brands {
+    &:first-child {
+        margin-right: 8px;
+        padding-right: 18px;
+        border-right: 1px solid #e2e2e2;
+    }
+    .fa-mobile-screen-button,
+    .fa-envelope {
+        font-size: 1.2rem;
         color: #424242;
         margin-right: 5px;
+    }
+}
+.facebook-icon {
+    padding: 3px 7px;
+    background: darken($color: rgb(86, 195, 231), $amount: 20);
+
+    border-radius: 3px;
+    .fa-facebook-f {
+        font-size: 0.8rem;
+        color: white;
     }
 }
