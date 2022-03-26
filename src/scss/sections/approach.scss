@@ -1,0 +1,80 @@
+.approach {
+    background: #f3f3f3;
+    padding: 86px 0 94px;
+
+    &_list {
+        margin: 0;
+        padding: 0;
+        counter-reset: count;
+    }
+
+    &_item {
+        border-radius: 5px;
+        box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, $alpha: 1);
+        color: $color-gray;
+        background: $color-white;
+        margin-bottom: 40px;
+
+        &:nth-child(2n) {
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: right;
+
+            .approach_text {
+                padding: 70px 90px;
+            }
+
+            .approach_step{
+                right: auto;
+                
+            }
+        }
+    }
+
+    &_image {
+        position: relative;
+        display: inline-block;
+        max-width: 340px;
+        max-height: 236px;
+        vertical-align: top;
+    }
+
+    &_picture {
+        display: block;
+        width: $width;
+        height: $height;
+    }
+
+    &_text {
+        display: inline-block;
+        font-size: 0.875rem;
+        vertical-align: top;
+        padding: 70px 70px 55px 90px;
+        width: 64%;
+    }
+
+    &_step {
+        @include centerer-y();
+
+        border: 2px solid $color-white;
+        border-radius: 5px;
+        background: $color-red;
+        font-size: 1.25rem;
+        color: $color-white;
+        text-align: center;
+        right: -100px;
+        width: 103px;
+        height: 103px;
+        padding-top: 10px;
+
+        &::before {
+            content: counter(count);
+            counter-increment: count;
+            display: block;
+            font-family: $ff-steps;
+            font-size: 3rem;
+            line-height: 1;
+            color: $color-white;
+        }
+    }
+}

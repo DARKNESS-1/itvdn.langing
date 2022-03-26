@@ -5,7 +5,7 @@
 }
 @mixin centerer-y() {
     position: absolute;
-    top: 50%;
+    top: 25%;
     transform: translate(-50%);
 }
 @mixin centerer-xy() {
