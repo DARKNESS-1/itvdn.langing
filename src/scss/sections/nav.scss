@@ -6,9 +6,9 @@
 
     &_link {
         display: inline-block;
-        font-family: helvetica;
-        font-weight: 700;
-        color: #424242;
+        font-family: $ff-main;
+        font-weight: $ff-weight-bold;
+        color: $color-gray;
         text-decoration: none;
         text-transform: capitalize;
         vertical-align: top;
@@ -17,14 +17,14 @@
 
         &:hover,
         &-active {
-            color: #de2b24;
+            color: $color-red;
         }
 
         &::after {
             content: "";
             display: inline-block;
             border-radius: 50%;
-            background: #424242;
+            background: $color-gray;
             vertical-align: middle;
             width: 5px;
             height: 5px;

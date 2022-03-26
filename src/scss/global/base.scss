@@ -18,7 +18,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    font-family: helvetica;
-    font-weight: 400;
+    font-family: $ff-main;
+    font-weight: $ff-weight-regular;
     line-height: 1.2;
 }

@@ -16,7 +16,7 @@
   font-family: helvetica;
   font-display: swap;
   src: url("../fonts/helvetica-neue-bold.woff2") format("woff2"), url("../fonts/helvetica-neue-bold.woff") format("woff");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -30,7 +30,7 @@
   font-family: helvetica;
   font-display: swap;
   src: url("../fonts/helvetica-neue-light.woff2") format("woff2"), url("../fonts/helvetica-neue-light.woff") format("woff");
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
 }
 *,
@@ -68,7 +68,7 @@ body {
 .button {
   display: inline-block;
   border-radius: 3px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 22px 7px;
 }
@@ -89,6 +89,25 @@ body {
   text-transform: uppercase;
 }
 
+.icon {
+  margin: auto auto 23px auto;
+}
+
+.icon-book {
+  background: url(../img/icons/book.png) center no-repeat;
+  height: 50%;
+}
+
+.icon-like {
+  background: url(../img/icons/like.png) center no-repeat;
+  height: 50%;
+}
+
+.icon-message {
+  background: url(../img/icons/message.png) center no-repeat;
+  height: 50%;
+}
+
 .header_top {
   background: #f0f2f4;
   border-bottom: 1px solid #e2e2e2;
@@ -103,7 +122,7 @@ body {
 }
 
 .contacts {
-  font-weight: 600;
+  font-weight: 700;
   text-align: right;
 }
 
@@ -137,7 +156,7 @@ body {
 }
 .facebook-icon .fa-facebook-f {
   font-size: 0.8rem;
-  color: white;
+  color: #ffffff;
 }
 
 .nav {
@@ -172,4 +191,89 @@ body {
 }
 .nav_link:last-child::after {
   display: none;
+}
+
+.hero {
+  background: #424242 url(../img/hero-bg.jpg) center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  min-height: 59px;
+  padding: 174px 0;
+}
+.hero_about {
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+}
+.hero_title {
+  font-family: helvetica;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+.hero .button-text-uppercase {
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 21px 41px;
+}
+
+.title {
+  margin-bottom: 65px;
+  text-align: center;
+}
+.title_header {
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin: 0;
+}
+.title_text {
+  font-family: helvetica;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+.title_with-bottom-line {
+  position: relative;
+}
+.title_with-bottom-line::after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  content: "";
+  background: #424242;
+  bottom: -16px;
+  width: 47px;
+  height: 5px;
+}
+
+.about {
+  text-align: center;
+  padding: 99px 0 105px;
+}
+.about_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 50px;
+}
+.about_item {
+  width: 25%;
+}
+.about_header {
+  font-family: helvetica;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #424242;
+  white-space: nowrap;
+  margin: 0 0 12px 0;
+}
+.about_description {
+  font-size: 0.875rem;
+  color: #5c5c5c;
+  line-height: 1.5;
+  margin-top: 0;
 }

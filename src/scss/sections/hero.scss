@@ -1,0 +1,29 @@
+.hero {
+    background: $color-gray url(../img/hero-bg.jpg) center/cover no-repeat;
+    color: $color-white;
+    text-align: center;
+    min-height: 59px;
+    padding: 174px 0;
+
+    &_about {
+        font-family: $ff-main;
+        font-weight: $ff-weight-bold;
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    &_title{
+        font-family: $ff-main;
+        font-weight: $ff-weight-light;
+        margin-top: 0;
+        margin-bottom: 27px;
+    }
+
+    .button-text-uppercase{
+        border-radius: 8px;
+        font-size: 1.5rem;
+        font-weight: $ff-weight-bold;
+        letter-spacing: 1px;
+        padding: 21px 41px;
+    }
+}
