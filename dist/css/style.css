@@ -361,6 +361,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
   padding: 0;
 }
+.work_picture {
+  height: 100%;
+}
 .work_item {
   background: #f35e59;
   font-weight: 400;

@@ -2,7 +2,7 @@
     background: $color-red;
     color: $color-white;
     padding: 110px;
-
+    
     .title_with-bottom-line {
         &::after {
             background: $color-white;
@@ -15,16 +15,19 @@
         padding: 0;
     }
 
+    &_picture {
+        height: $height;
+    }
+
     &_item {
         background: #f35e59;
         font-weight: $ff-weight-regular;
         color: $color-white;
-        // width: 256px;
-        // height: 255px;
 
         &:nth-child(5) {
             order: 1;
         }
+
         &-name {
             position: relative;
             padding: 0 40px 75px;
@@ -39,6 +42,7 @@
     &_name {
         font-size: 1.625rem;
     }
+
     &_name,
     &_description {
         margin-top: -50px;

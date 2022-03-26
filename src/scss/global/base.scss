@@ -3,10 +3,12 @@
 *::after {
     box-sizing: inherit;
 }
+
 ul,
 ol {
     list-style: none;
 }
+
 .clearfix {
     &::after {
         content: "";
@@ -14,12 +16,19 @@ ol {
         clear: both;
     }
 }
+
 html {
     box-sizing: border-box;
 }
+
 body {
     font-family: $ff-main;
     font-weight: $ff-weight-regular;
     line-height: 1.2;
     margin: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
 }
