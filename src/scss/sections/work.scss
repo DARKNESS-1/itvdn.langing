@@ -1,8 +1,8 @@
 .work {
     background: $color-red;
-    color: $color-white;
-    padding: 110px;
-    
+    color     : $color-white;
+    padding   : 110px;
+
     .title_with-bottom-line {
         &::after {
             background: $color-white;
@@ -10,9 +10,9 @@
     }
 
     &_list {
-        display: grid;
+        display              : grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 0;
+        padding              : 0;
     }
 
     &_picture {
@@ -20,17 +20,17 @@
     }
 
     &_item {
-        background: #f35e59;
+        background : #f35e59;
         font-weight: $ff-weight-regular;
-        color: $color-white;
+        color      : $color-white;
 
         &:nth-child(5) {
             order: 1;
         }
 
         &-name {
-            position: relative;
-            padding: 0 40px 75px;
+            position  : relative;
+            padding   : 0 40px 75px;
             text-align: center;
 
             &::before {

@@ -1,0 +1,107 @@
+.form-section {
+    background: #1287bf;
+    color     : $color-white;
+    padding   : 100px 0 110px;
+
+    .title {
+        margin-bottom: 12px;
+    }
+
+    .title_header {
+        font-size: 2.25rem;
+    }
+
+    .title_text {
+        font-size: 1.25rem;
+    }
+
+    .btn-down {
+        position     : relative;
+        border       : 2px solid $color-white;
+        border-radius: 50%;
+        margin       : auto auto 20px;
+        width        : 65px;
+        height       : 65px;
+    }
+
+    .arrow-down {
+        @include centerer-xy();
+
+        .fa {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.form {
+    position     : relative;
+    border-radius: 3px;
+    background   : $color-white;
+    color        : #828282;
+    text-align   : center;
+    width        : 67%;
+    padding      : 50px 50px 66px;
+    margin       : auto;
+
+    &-container {
+        padding-top: 30px;
+    }
+
+    &::before {
+
+        @include centerer-xy();
+
+        content      : '';
+        border       : 30px solid transparent;
+        border-bottom: 30px solid $color-white;
+        top          : -30px;
+    }
+
+    &_close-button {
+        position     : absolute;
+        top          : -22px;
+        right        : -16px;
+        border       : 2px solid $color-white;
+        border-radius: 50%;
+        background   : #de2b24;
+        font-size    : 2.25rem;
+        color        : $color-white;
+        text-align   : center;
+        width        : calc($width_px*5);
+        height       : calc($width_px*5);
+        transition   : 0.3s;
+
+        &:hover {
+            background: lighten($color: #de2b24, $amount: 10);
+        }
+    }
+
+    &_text {
+        font-size    : 0.9375rem;
+        line-height  : 1.5;
+        margin-bottom: 2rem;
+    }
+
+    &_fields {
+        margin-bottom: 36px;
+    }
+
+    &_input {
+        display      : block;
+        border       : 1px solid#d8d8d8;
+        border-radius: 3px;
+        font-size    : 0.875rem;
+        padding      : 18px 20px;
+        margin       : auto auto 8px;
+        width        : 76%;
+
+        &:focus {
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, $alpha: 0.5);
+        }
+    }
+
+    .button {
+        border : none;
+        padding: 15px 30px;
+    }
+}

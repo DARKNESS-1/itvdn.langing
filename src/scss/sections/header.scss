@@ -1,53 +1,58 @@
 .header {
     &_top {
-        background: #f0f2f4;
-        border-bottom: 1px solid $color-border;
+        background    : #f0f2f4;
+        border-bottom : 1px solid $color-border;
         vertical-align: top;
     }
+
     &_bottom {
-        display: flex;
+        display        : flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 41px 0 32px;
+        flex-wrap      : wrap;
+        align-items    : center;
+        padding        : 41px 0 32px;
     }
 }
 
 .contacts {
     font-weight: $ff-weight-bold;
-    text-align: right;
+    text-align : right;
 }
 
 .contact {
-    display: inline-block;
-    padding: 10px 10px 8px;
-    color:$color-gray;
-    transition: 0.3s;
-    text-align: center;
+    display        : inline-block;
+    padding        : 10px 10px 8px;
+    color          : $color-gray;
+    transition     : 0.3s;
+    text-align     : center;
     text-decoration: none;
 
     &:hover {
         color: lighten($color: $color-gray, $amount: 20);
     }
+
     &:first-child {
-        margin-right: 8px;
+        margin-right : 8px;
         padding-right: 18px;
-        border-right: 1px solid $color-border;
+        border-right : 1px solid $color-border;
     }
+
     .fa-mobile-screen-button,
     .fa-envelope {
-        font-size: 1.2rem;
-        color: $color-gray;
+        font-size   : 1.2rem;
+        color       : $color-gray;
         margin-right: 5px;
     }
 }
+
 .facebook-icon {
-    padding: 3px 7px;
+    padding   : 3px 7px;
     background: darken($color: rgb(86, 195, 231), $amount: 20);
 
     border-radius: 3px;
+
     .fa-facebook-f {
         font-size: 0.8rem;
-        color: $color-white;
+        color    : $color-white;
     }
 }

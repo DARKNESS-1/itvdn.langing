@@ -1,18 +1,18 @@
 .title {
     margin-bottom: 65px;
-    text-align: center;
+    text-align   : center;
 
     &_header {
         font-family: $ff-main;
         font-weight: $ff-weight-bold;
-        font-size: 2.25rem;
-        margin: 0;
+        font-size  : 2.25rem;
+        margin     : 0;
     }
 
     &_text {
         font-family: $ff-main;
         font-weight: $ff-weight-light;
-        font-size: 1.25rem;
+        font-size  : 1.25rem;
     }
 
     &_with-bottom-line {
@@ -21,11 +21,11 @@
         &::after {
             @include centerer-x();
 
-            content: "";
+            content   : "";
             background: $color-gray;
-            bottom: -16px;
-            width: 47px;
-            height: 5px;
+            bottom    : -16px;
+            width     : 47px;
+            height    : 5px;
         }
     }
 }

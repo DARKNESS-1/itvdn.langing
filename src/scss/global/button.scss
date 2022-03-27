@@ -1,9 +1,9 @@
 .button {
-    display: inline-block;
-    border-radius: 3px;
-    color: $color-white;
+    display        : inline-block;
+    border-radius  : 3px;
+    color          : $color-white;
     text-decoration: none;
-    padding: 10px 22px 7px;
+    padding        : 10px 22px 7px;
 
     &-red {
         background: $color-red;
@@ -13,12 +13,15 @@
             background: lighten($color: $color-red, $amount: 7);
         }
     }
+
     &-yellow {
         background: $color-yellow;
+
         &:hover {
             background: lighten($color: $color-yellow, $amount: 7);
         }
     }
+
     &-text-uppercase {
         text-transform: uppercase;
     }

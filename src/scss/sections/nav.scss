@@ -1,19 +1,19 @@
 .nav {
-    display: inline-block;
+    display       : inline-block;
     vertical-align: top;
-    padding-top: 7px;
-    margin-right: 15px;
+    padding-top   : 7px;
+    margin-right  : 15px;
 
     &_link {
-        display: inline-block;
-        font-family: $ff-main;
-        font-weight: $ff-weight-bold;
-        color: $color-gray;
+        display        : inline-block;
+        font-family    : $ff-main;
+        font-weight    : $ff-weight-bold;
+        color          : $color-gray;
         text-decoration: none;
-        text-transform: capitalize;
-        vertical-align: top;
-        padding: 10px;
-        transition: 0.3s;
+        text-transform : capitalize;
+        vertical-align : top;
+        padding        : 10px;
+        transition     : 0.3s;
 
         &:hover,
         &-active {
@@ -21,17 +21,17 @@
         }
 
         &::after {
-            content: "";
-            display: inline-block;
-            border-radius: 50%;
-            background: $color-gray;
+            content       : "";
+            display       : inline-block;
+            border-radius : 50%;
+            background    : $color-gray;
             vertical-align: middle;
-            width: 5px;
-            height: 5px;
-            margin-left: 15px;
+            width         : 5px;
+            height        : 5px;
+            margin-left   : 15px;
         }
 
-        &:last-child::after{
+        &:last-child::after {
             display: none;
         }
     }

@@ -1,13 +1,13 @@
 .about {
     text-align: center;
-    padding: 99px 0 105px;
+    padding   : 99px 0 105px;
 
     &_list {
-        display: flex;
+        display        : flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0 50px;
+        flex-wrap      : wrap;
+        margin         : 0;
+        padding        : 0 50px;
     }
 
     &_item {
@@ -16,17 +16,17 @@
 
     &_header {
         font-family: $ff-main;
-        font-size: 1.375rem;
+        font-size  : 1.375rem;
         font-weight: $ff-weight-bold;
-        color: $color-gray;
+        color      : $color-gray;
         white-space: nowrap;
-        margin: 0 0 12px 0;
+        margin     : 0 0 12px 0;
     }
 
     &_description {
-        font-size: 0.875rem;
-        color: #5c5c5c;
+        font-size  : 0.875rem;
+        color      : #5c5c5c;
         line-height: 1.5;
-        margin-top: 0;
+        margin-top : 0;
     }
 }

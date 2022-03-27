@@ -4,20 +4,20 @@
 
 .icon-book {
     background: $book;
-    height: calc($height / 2);
+    height    : calc($height / 2);
 }
 
 .icon-like {
     background: $like;
-    height: calc($height / 2);
+    height    : calc($height / 2);
 }
 
 .icon-message {
     background: $message;
-    height: calc($height / 2);
+    height    : calc($height / 2);
 }
 
 .icon-work-items {
     background: $work-items;
-    height: $height;
+    height    : $height;
 }

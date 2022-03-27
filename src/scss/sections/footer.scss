@@ -1,0 +1,85 @@
+.footer {
+    &_top {
+        background: #2a2a2a;
+        text-align: center;
+        padding   : 88px 0 83px;
+    }
+
+    &_bottom {
+        background: #515151;
+        text-align: center;
+        padding   : 26px;
+    }
+
+    &_title {
+        font-family  : $ff-main;
+        font-weight  : $ff-weight-bold;
+        font-size    : 1.8125rem;
+        color        : $color-white;
+        margin-bottom: 20px;
+    }
+
+    &_social {
+        border       : 1px solid #515151;
+        border-radius: 3px;
+        padding      : 15px;
+        margin-left  : 20px;
+
+        &:hover {
+            border: 1px solid $color-red;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &_links {
+        margin-bottom: 35px;
+
+        .fa {
+            font-size: 1.25rem;
+            color    : $color-white;
+        }
+    }
+
+    &_text {
+        font-size    : 0.875rem;
+        color        : #cecece;
+        margin-bottom: 30px;
+    }
+
+    &_field {
+        margin: 0 auto 27px;
+        width : 67%;
+    }
+
+    &_input {
+        border    : none;
+        background: #515151;
+        font-size : 0.875rem;
+        color     : #cecece;
+        padding   : 20px;
+        width     : $width;
+    }
+
+    .button {
+        box-sizing : border-box;
+        border     : 2px solid #515151;
+        background : initial;
+        font-family: $ff-main;
+        font-weight: $ff-weight-bold;
+        font-size  : 1.0625rem;
+        color      : $color-white;
+        padding    : 15px 37px;
+
+        &:hover {
+            border: 2px solid $color-red;
+        }
+    }
+
+    &_copy {
+        font-size: 0.875rem;
+        color    : #cecece;
+    }
+}
