@@ -46,13 +46,12 @@
 }
 
 .facebook-icon {
-    padding   : 3px 7px;
-    background: darken($color: rgb(86, 195, 231), $amount: 20);
-
+    padding      : 3px 7px;
+    background   : darken($color: rgb(86, 195, 231), $amount: 20);
     border-radius: 3px;
 
     .fa-facebook-f {
-        font-size: 0.8rem;
+        font-size: .8rem;
         color    : $color-white;
     }
 }

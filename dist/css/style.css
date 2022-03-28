@@ -59,6 +59,10 @@ body {
   margin: auto;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .button {
   display: inline-block;
   border-radius: 3px;
@@ -161,7 +165,6 @@ body {
 .nav {
   display: inline-block;
   vertical-align: top;
-  padding-top: 7px;
   margin-right: 15px;
 }
 .nav_link {
@@ -316,6 +319,10 @@ body {
   width: 100%;
   height: 100%;
 }
+.approach_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .approach_text {
   display: inline-block;
   font-size: 0.875rem;
@@ -370,8 +377,21 @@ body {
   font-weight: 400;
   color: #ffffff;
 }
-.work_item:nth-child(5) {
-  order: 1;
+.work_item:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.work_item:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.work_item:nth-child(3) {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.work_item:nth-child(4) {
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 .work_item-name {
   position: relative;
@@ -568,12 +588,23 @@ body {
   }
 }
 @media screen and (max-width: 992px) {
+  .header_button {
+    display: none;
+  }
+
+  .title {
+    margin: 0;
+  }
+  .title_with-bottom-line {
+    margin-bottom: 50px;
+  }
+
   .hero,
 .about,
 .approach,
 .work,
 .form-section {
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
   }
 
@@ -585,6 +616,9 @@ body {
   }
   .about_item {
     width: 33.3333333333%;
+  }
+  .about_description {
+    font-size: 1rem;
   }
 
   .approach_item:nth-child(n) .approach_text, .approach_item:nth-child(2n) .approach_text {
@@ -613,10 +647,221 @@ body {
   }
 
   .form {
+    width: 80%;
+  }
+  .form_input {
     width: 90%;
   }
 
   .footer_top {
     padding: 40px 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_bottom {
+    flex-direction: column;
+  }
+
+  .hero_about {
+    font-size: 2rem;
+  }
+  .hero_title {
+    margin-bottom: 15px;
+  }
+  .hero .button-text-uppercase {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .title {
+    margin: 0;
+  }
+  .title_with-bottom-line {
+    margin-bottom: 35px;
+  }
+
+  .hero,
+.about,
+.approach,
+.work,
+.form-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .about_list {
+    flex-direction: column;
+  }
+  .about_item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+  }
+  .about_item .icon {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+  }
+  .about_header {
+    align-self: center;
+    white-space: pre-wrap;
+    margin: 0;
+  }
+  .about_description {
+    line-height: 1.25;
+    padding-right: 1rem;
+  }
+
+  .approach_item:nth-child(n), .approach_item:nth-child(2n) {
+    flex-direction: column;
+    text-align: center;
+  }
+  .approach_image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .approach_title {
+    font-size: 1.25rem;
+  }
+  .approach_text {
+    font-size: 1rem;
+  }
+  .approach_step {
+    display: none;
+  }
+
+  .work_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work_picture {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .work_item:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .work_item:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .work_item:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .work_item:nth-child(6) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .form {
+    width: 90%;
+  }
+  .form_close-button {
+    font-size: 1.75rem;
+    top: -16px;
+    right: -12px;
+    width: 40px;
+    height: 40px;
+  }
+  .form_input {
+    width: 100%;
+  }
+
+  .footer_top {
+    padding: 40px 0 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    margin-right: 0.1rem;
+  }
+  .nav_link {
+    padding: 0.2rem;
+  }
+  .nav_link::after {
+    margin-left: 0.5rem;
+  }
+
+  .about_item {
+    grid-template-rows: repeat(2, 0.75fr);
+  }
+
+  .work_name {
+    font-size: 1rem;
+    margin-top: -10px;
+  }
+  .work_description {
+    margin-top: -40px;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
+  .footer_field {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header_bottom {
+    padding: 0.5rem;
+  }
+  .header_top > .container, .header_bottom {
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+  }
+
+  .contact,
+.contact * {
+    font-size: 1rem;
+    padding: 2px 2px 3px 0;
+    margin: 0;
+  }
+  .contact:first-child,
+.contact *:first-child {
+    padding-right: 2px;
+    margin-right: 2px;
+  }
+
+  .nav_link {
+    padding: 0.1rem;
+  }
+  .nav_link::after {
+    margin-left: 0.2rem;
+  }
+
+  .hero,
+.about,
+.approach,
+.work,
+.form-section {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  .hero_about {
+    font-size: 1.5rem;
+  }
+  .hero_title {
+    font-size: 1rem;
+  }
+  .hero .button-text-uppercase {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .about_header {
+    padding: 0;
+    margin: 0;
+  }
+  .about_item {
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+  .about_description {
+    line-height: 1;
   }
 }
