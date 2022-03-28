@@ -59,10 +59,6 @@ body {
   margin: auto;
 }
 
-.is-hidden {
-  display: none;
-}
-
 .button {
   display: inline-block;
   border-radius: 3px;
@@ -291,6 +287,7 @@ body {
   counter-reset: count;
 }
 .approach_item {
+  display: flex;
   border-radius: 5px;
   box-shadow: -1px -1px 10px 1px #d6d6d6;
   color: #424242;
@@ -298,7 +295,6 @@ body {
   margin-bottom: 40px;
 }
 .approach_item:nth-child(2n) {
-  display: flex;
   flex-direction: row-reverse;
   text-align: right;
 }
@@ -355,7 +351,7 @@ body {
 .work {
   background: #de2b24;
   color: #ffffff;
-  padding: 110px;
+  padding: 110px 0;
 }
 .work .title_with-bottom-line::after {
   background: #ffffff;
@@ -366,6 +362,7 @@ body {
   padding: 0;
 }
 .work_picture {
+  width: 100%;
   height: 100%;
 }
 .work_item {
@@ -559,4 +556,67 @@ body {
 .footer_copy {
   font-size: 0.875rem;
   color: #cecece;
+}
+
+@media screen and (max-width: 1080px) {
+  .header_bottom {
+    padding: 20px 0 15px;
+  }
+  .header_top > .container, .header_bottom {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero,
+.about,
+.approach,
+.work,
+.form-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .about {
+    margin-bottom: 1rem;
+  }
+  .about_list {
+    padding: 0;
+  }
+  .about_item {
+    width: 33.3333333333%;
+  }
+
+  .approach_item:nth-child(n) .approach_text, .approach_item:nth-child(2n) .approach_text {
+    padding: 1.75rem 4rem 0;
+  }
+  .approach_picture {
+    height: auto;
+  }
+  .approach_text {
+    padding: auto;
+    width: 100%;
+  }
+  .approach_step {
+    top: 15%;
+  }
+
+  .work_item-name {
+    padding: 0;
+  }
+  .work_item-name .icon {
+    width: 66.6666666667%;
+    height: 66.6666666667%;
+  }
+  .work_name {
+    margin-top: -25px;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .footer_top {
+    padding: 40px 0 40px;
+  }
 }

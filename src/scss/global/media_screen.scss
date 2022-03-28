@@ -1,0 +1,94 @@
+@media screen and (max-width: 1080px) {
+    .header {
+        &_bottom {
+            padding: 20px 0 15px;
+        }
+
+        &_top>.container,
+        &_bottom {
+            padding-right: 1rem;
+            padding-left : 1rem;
+        }
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .hero,
+    .about,
+    .approach,
+    .work,
+    .form-section {
+        padding-top   : 50px;
+        padding-bottom: 50px;
+    }
+
+    .about {
+        margin-bottom: 1rem;
+
+        &_list {
+            padding: 0;
+        }
+
+        &_item {
+            width: calc($width/3);
+        }
+    }
+
+    .approach {
+        &_item {
+
+            &:nth-child(n),
+            &:nth-child(2n) {
+                .approach_text {
+                    padding: 1.75rem 4rem 0;
+                }
+            }
+        }
+
+        &_picture {
+            height: auto;
+        }
+
+        &_text {
+            padding: auto;
+            width  : $width;
+        }
+
+        &_step {
+            top: 15%;
+        }
+    }
+
+    .work {
+        &_item {
+            &-name {
+                padding: 0;
+
+                .icon {
+                    width : calc($width/1.5);
+                    height: calc($height/1.5);
+                }
+            }
+        }
+
+        &_name {
+            margin-top: -25px;
+        }
+    }
+
+    .form {
+        width: calc($width*0.9);
+    }
+
+    .footer {
+        &_top {
+            padding: 40px 0 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}

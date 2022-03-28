@@ -9,6 +9,7 @@
     }
 
     &_item {
+        display      : flex;
         border-radius: 5px;
         box-shadow   : -1px -1px 10px 1px rgba(214, 214, 214, $alpha: 1);
         color        : $color-gray;
@@ -16,7 +17,6 @@
         margin-bottom: 40px;
 
         &:nth-child(2n) {
-            display       : flex;
             flex-direction: row-reverse;
             text-align    : right;
 
@@ -26,7 +26,6 @@
 
             .approach_step {
                 right: auto;
-
             }
         }
     }

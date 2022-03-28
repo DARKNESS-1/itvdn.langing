@@ -1,7 +1,7 @@
 .work {
     background: $color-red;
     color     : $color-white;
-    padding   : 110px;
+    padding   : 110px 0;
 
     .title_with-bottom-line {
         &::after {
@@ -16,6 +16,7 @@
     }
 
     &_picture {
+        width: $width;
         height: $height;
     }
 
