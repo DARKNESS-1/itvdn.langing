@@ -58,10 +58,11 @@
 
     &_name {
         font-size: 1.625rem;
+        margin-top: -30px;
+        white-space: nowrap;
     }
 
-    &_name,
     &_description {
-        margin-top: -50px;
+        margin-top: -70px;
     }
 }

@@ -405,9 +405,11 @@ body {
 }
 .work_name {
   font-size: 1.625rem;
+  margin-top: -30px;
+  white-space: nowrap;
 }
-.work_name, .work_description {
-  margin-top: -50px;
+.work_description {
+  margin-top: -70px;
 }
 
 .form-section {
@@ -437,6 +439,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #ffffff;
+  padding: 1rem;
 }
 .form-section .arrow-down .fa {
   font-size: 2.5rem;
@@ -467,12 +471,13 @@ body {
 }
 .form_close-button {
   position: absolute;
-  top: -22px;
-  right: -16px;
+  cursor: pointer;
+  top: -20px;
+  right: -20px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   background: #de2b24;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   color: #ffffff;
   text-align: center;
   width: 50px;
@@ -504,6 +509,7 @@ body {
 }
 .form .button {
   border: none;
+  cursor: pointer;
   padding: 15px 30px;
 }
 

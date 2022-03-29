@@ -24,7 +24,7 @@
       <div class="container">
         <div class="header_bottom">
           <div class="logo"><img class="logo_pictures" src="img/logo.png" alt="logo"/></div>
-          <nav class="nav"> <a class="nav_link nav_link-active" href="#">Home</a><a class="nav_link" href="#">About us</a><a class="nav_link" href="#">Our Approach</a><a class="nav_link" href="#">Our Work</a>
+          <nav class="nav"> <a class="nav_link nav_link-active" href="#" data-link="header">Home</a><a class="nav_link" href="#" data-link="about">About us</a><a class="nav_link" href="#" data-link="approach">Our Approach</a><a class="nav_link" href="#" data-link="work">Our Work</a>
           </nav><a class="button header_button button-red" href="#">Free Consultation</a>
         </div>
       </div>
@@ -153,15 +153,15 @@
           <h2 class="title title_header">Get Your Free Facebook Analysis Now</h2>
           <div class="title_text">Enter your details below</div>
         </div>
-        <div class="btn-down"><a class="arrow-down"><i class="fa fa-angle-down"> </i></a></div>
+        <div class="btn-down"><a class="arrow-down" href="form.html" target="_blank"><i class="fa fa-angle-down"> </i></a></div>
         <div class="form-container is-hidden"> 
           <form class="form" method="post" action="#"> 
-            <button class="form_close-button" type="button">x </button>
+            <button class="form_close-button" type="button">X </button>
             <div class="form_text">Sit down with our experts to receive a free customized marketing plan for your business + Learn How To Use Google and Facebook to get 5000% ROI or more</div>
             <div class="form_fields"> 
-              <input class="form_input" type="text" placeholder="Your Name"/>
-              <input class="form_input" type="text" placeholder="Contact Namber"/>
-              <input class="form_input" type="text" placeholder="Contact Name"/>
+              <input class="form_input" type="text" placeholder="Your Name" data-valid="required"/>
+              <input class="form_input" type="email" placeholder="Email" data-valid="required" data-email="data-email"/>
+              <input class="form_input" type="text" placeholder="Contact Namber" data-valid="required" data-number="data-number"/>
             </div>
             <button class="button button-text-uppercase button-red" type="submit">Submit now</button>
           </form>
