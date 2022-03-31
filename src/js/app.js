@@ -8,28 +8,9 @@ const swiper = new Swiper();
 
 window.DARKNESS = {};
 
+// Navigation
 (function () {
-    let openFormButton = document.querySelector('.arrow-down');
-    let submitFormButton = document.querySelector('.form');
     let nav = document.querySelector('.nav');
-
-    if (openFormButton) {
-        openFormButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            DARKNESS.form.open();
-        })
-    }
-
-    if (submitFormButton) {
-        submitFormButton.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (DARKNESS.form.isValid()) {
-                console.log('All good');
-            } else {
-                console.log('Not valid');
-            }
-        })
-    }
 
     if (nav) {
         nav.addEventListener('click', (e) => {
@@ -41,9 +22,37 @@ window.DARKNESS = {};
             DARKNESS.navigation.toggleToActiveLink(target);
         })
     }
-
 }());
 
+//Form Open
+(function () {
+    let openFormButton = document.querySelector('.arrow-down');
+
+    if (openFormButton) {
+        openFormButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            DARKNESS.form.open();
+        })
+    }
+}());
+
+//Form Submit
+(function () {
+    let submitFormButton = document.querySelector('.form');
+
+    if (submitFormButton) {
+        submitFormButton.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (DARKNESS.form.isValid()) {
+                console.log('All good');
+            } else {
+                console.log('Not good');
+            }
+        })
+    }
+}());
+
+// Form Valid Events
 (function () {
     let validEvent = {};
 
@@ -64,6 +73,7 @@ window.DARKNESS = {};
     DARKNESS.validation = validEvent;
 }());
 
+// Form Event
 (function () {
     let formEvent = {};
     let form = document.querySelector('.form-container');
@@ -96,7 +106,6 @@ window.DARKNESS = {};
         let numberValue = document.querySelector('[data-number]').value;
 
         if (!formEvent.isAllCompleted(requiredFields)) {
-            console.log('Заполните поля');
             return false;
         } else if (!DARKNESS.validation.isEmail(emailValue)) {
             console.log('Error Email');
@@ -122,6 +131,7 @@ window.DARKNESS = {};
     DARKNESS.form = formEvent;
 }());
 
+// Page Navigation
 (function () {
     let navEvent = {};
 
@@ -142,21 +152,14 @@ window.DARKNESS = {};
         let section = document.querySelector('.' + showedSection);
         let coords = section.getBoundingClientRect();
         let animateTime = 0.4;
-        // while (document.body.scrollTop < coords.top) {
-        //     window.scrollBy(coords);
-        //     break;
-        // }
-        let timerId = setInterval(() => {
-            if (document.body.scrollTop < coords.top) {
-                window.scrollBy(0, showedSection);
-               // break;
+        let timerID = setInterval(() => {
+            if (window.scrollY < coords.top) {
+                window.scrollBy(0, 10);
             } else {
-                clearInterval(timerId);
+                clearInterval(timerID);
             }
         }, animateTime || 0.5);
-       
     }
-
     DARKNESS.navigation = navEvent;
 }());
 

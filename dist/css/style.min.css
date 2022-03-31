@@ -453,7 +453,7 @@ body {
   color: #828282;
   text-align: center;
   width: 67%;
-  padding: 50px 50px 66px;
+  padding: 3rem 3rem 2rem;
   margin: auto;
 }
 .form-container {
@@ -505,12 +505,27 @@ body {
   width: 76%;
 }
 .form_input:focus {
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 255, 0.5);
 }
 .form .button {
   border: none;
   cursor: pointer;
   padding: 15px 30px;
+}
+.form_required {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: helvetica;
+  font-weight: 700;
+  color: #de2b24;
+  height: 3rem;
+}
+.form_valid {
+  box-shadow: 0 0 8px 1px green;
+}
+.form_no-valid {
+  box-shadow: 0 0 8px 1px red;
 }
 
 .footer_top {

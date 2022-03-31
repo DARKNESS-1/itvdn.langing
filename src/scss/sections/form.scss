@@ -42,7 +42,7 @@
     color        : #828282;
     text-align   : center;
     width        : 67%;
-    padding      : 50px 50px 66px;
+    padding      : 3rem 3rem 2rem;
     margin       : auto;
 
     &-container {
@@ -99,7 +99,7 @@
         width        : 76%;
 
         &:focus {
-            box-shadow: 0 0 8px 1px rgba(0, 0, 0, $alpha: 0.5);
+            box-shadow: 0 0 8px 1px rgba($color: blue, $alpha: 0.5);
         }
     }
 
@@ -107,5 +107,23 @@
         border : none;
         cursor : pointer;
         padding: 15px 30px;
+    }
+
+    &_required {
+        display        : flex;
+        justify-content: center;
+        align-items    : end;
+        font-family    : $ff-main;
+        font-weight    : $ff-weight-bold;
+        color          : $color-red;
+        height         : 3rem;
+    }
+
+    &_valid {
+        box-shadow: 0 0 8px 1px rgba($color: green, $alpha: 1.0);
+    }
+
+    &_no-valid {
+        box-shadow: 0 0 8px 1px rgba($color: red, $alpha: 1.0);
     }
 }
